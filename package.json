@@ -4,10 +4,16 @@
   "description": "Unofficial TypeScript/JavaScript client for Cozi Family Organizer API (reverse-engineered)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepublishOnly": "npm run build"
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
     "cozi",
@@ -15,10 +21,16 @@
     "calendar",
     "todo",
     "shopping-list",
-    "api-client"
+    "api-client",
+    "typescript",
+    "javascript",
+    "reverse-engineered"
   ],
   "author": "BrandCast Team",
   "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BrandCast-Signage/cozi-api-client.git"
@@ -31,7 +43,19 @@
     "axios": "^1.7.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.0",
     "@types/node": "^20.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/__tests__/**/*.test.ts"],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ]
   }
 }
