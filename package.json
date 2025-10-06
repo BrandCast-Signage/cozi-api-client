@@ -1,5 +1,5 @@
 {
-  "name": "@brandcast/cozi-api-client",
+  "name": "@brandcast_app/cozi-api-client",
   "version": "0.1.0",
   "description": "Unofficial TypeScript/JavaScript client for Cozi Family Organizer API (reverse-engineered)",
   "main": "dist/index.js",

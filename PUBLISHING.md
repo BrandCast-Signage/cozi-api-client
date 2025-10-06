@@ -47,7 +47,7 @@ npm install -g ./brandcast-cozi-api-client-0.1.0.tgz
 
 ### 3. Publish to npm
 
-#### Option A: Publish to @brandcast scope (requires org access)
+#### Option A: Publish to @brandcast_app scope (requires org access)
 
 ```bash
 npm publish --access public
@@ -71,8 +71,8 @@ npm publish --access public
 ### 4. Verify Publication
 
 After publishing, verify at:
-- npm: https://www.npmjs.com/package/@brandcast/cozi-api-client
-- unpkg: https://unpkg.com/@brandcast/cozi-api-client/
+- npm: https://www.npmjs.com/package/@brandcast_app/cozi-api-client
+- unpkg: https://unpkg.com/@brandcast_app/cozi-api-client/
 
 ### 5. Create GitHub Release
 
@@ -92,7 +92,7 @@ After publishing, verify at:
 
 ### Monitor
 
-- Check npm downloads: https://npm-stat.com/charts.html?package=@brandcast/cozi-api-client
+- Check npm downloads: https://npm-stat.com/charts.html?package=@brandcast_app/cozi-api-client
 - Monitor issues and questions
 - Watch for security advisories
 
@@ -133,9 +133,9 @@ npm publish
 npm login
 ```
 
-### Publishing Fails - No Access to @brandcast Scope
+### Publishing Fails - No Access to @brandcast_app Scope
 Either:
-1. Request access to @brandcast organization
+1. Request access to @brandcast_app organization
 2. Or publish under your own scope (see Option B above)
 
 ### Publishing Fails - Version Already Exists
@@ -147,7 +147,7 @@ Update version in package.json and try again
 
 ## Important Notes
 
-- **Scoped packages** (@brandcast/...) require `--access public` to be publicly available
+- **Scoped packages** (@brandcast_app/...) require `--access public` to be publicly available
 - **Always test** before publishing (run `npm test`)
 - **Never publish** with uncommitted changes
 - **Semantic versioning** is important for users to understand changes

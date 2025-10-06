@@ -1,6 +1,6 @@
 # Cozi API Client
 
-[![npm version](https://badge.fury.io/js/%40brandcast%2Fcozi-api-client.svg)](https://badge.fury.io/js/%40brandcast%2Fcozi-api-client)
+[![npm version](https://badge.fury.io/js/%40brandcast_app%2Fcozi-api-client.svg)](https://badge.fury.io/js/%40brandcast_app%2Fcozi-api-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Unofficial TypeScript/JavaScript client for the Cozi Family Organizer API.
@@ -27,19 +27,19 @@ Unofficial TypeScript/JavaScript client for the Cozi Family Organizer API.
 ## Installation
 
 ```bash
-npm install @brandcast/cozi-api-client
+npm install @brandcast_app/cozi-api-client
 ```
 
 or
 
 ```bash
-yarn add @brandcast/cozi-api-client
+yarn add @brandcast_app/cozi-api-client
 ```
 
 ## Quick Start
 
 ```typescript
-import { CoziApiClient } from '@brandcast/cozi-api-client';
+import { CoziApiClient } from '@brandcast_app/cozi-api-client';
 
 // Create a client instance
 const client = new CoziApiClient({
@@ -236,7 +236,7 @@ interface CoziAuthResponse {
 ## Complete Example
 
 ```typescript
-import { CoziApiClient } from '@brandcast/cozi-api-client';
+import { CoziApiClient } from '@brandcast_app/cozi-api-client';
 
 async function main() {
   // Create client with debug logging
